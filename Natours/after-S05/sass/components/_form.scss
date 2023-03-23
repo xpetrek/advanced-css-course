@@ -39,6 +39,7 @@
         margin-top: .7rem;
         display: block;
         transition: all .3s;
+        position: absolute;
     }
 
     &__input:placeholder-shown + &__label {

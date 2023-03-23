@@ -4,7 +4,7 @@ body {
   /* font-size: 16px; */
   font-size: 1.6rem;
   line-height: 1.7;
-  color: $color-grey-dark;
+  color: $color-grey-dark-1;
   padding: 3rem;
 }
 
@@ -58,13 +58,13 @@ body {
 }
 
 .heading-tertiary {
-  font-size: $font-size-defualt;
+  font-size: $font-size-default;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .paragraph {
-  font-size: $font-size-defualt;
+  font-size: $font-size-default;
 
   &:not(:last-child) {
     margin-bottom: 3rem;
