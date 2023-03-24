@@ -1,17 +1,32 @@
 .row {
+  @include clearfix;
   max-width: $grid-width;
   margin: 0 auto;
 
+  @include respond(tab-port) {
+    padding: 0 3rem;
+    max-width: 50rem;
+  }
+
   &:not(:last-child) {
     margin-bottom: $gutter-vertical;
+
+    @include respond(tab-port) {
+      margin-bottom: $gutter-vertical-small;
+    }
   }
-  @include clearfix;
 
   [class^="col-"] {
     float: left;
 
     &:not(:last-child) {
       margin-right: $gutter-horizontal;
+    }
+
+    @include respond(tab-port) {
+      width: 100% !important;
+      margin-right: 0;
+      margin-bottom: $gutter-vertical-small;
     }
   }
 
